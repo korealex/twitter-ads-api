@@ -1,3 +1,4 @@
 nbproject/
 vendor/
 composer.json~
+composer.lock
