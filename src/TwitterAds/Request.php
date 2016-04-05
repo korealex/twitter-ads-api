@@ -14,7 +14,7 @@ namespace TwitterAds;
  * @author logopogo
  */
 class Request {
-    
+
     const BASE_URL = "https://ads-api.twitter.com/";
 
     protected $client;
@@ -26,29 +26,26 @@ class Request {
         $this->response = new Response();
     }
 
-    public function setHeaders($access_token,$secret) {
+    public function setHeaders($access_token, $secret) {
         
     }
 
     public function get($uri, $data) {
-        
-        $query = ['query'=>$data];
-        
-        $this->client->get(static::BASE_URL.$uri, $query);
+
+        $query = ['query' => $data];
+
+        $this->client->get(static::BASE_URL . $uri, $query);
+    }
+
+    public function post($uri, $data) {
         
     }
 
-    public function post($uri,$data) {
-        
-         
+    public function update($uri, $id, $data) {
         
     }
 
-    public function update($uri,$id,$data) {
-        
-    }
-
-    public function delete($uri,$id) {
+    public function delete($uri, $id) {
         
     }
 

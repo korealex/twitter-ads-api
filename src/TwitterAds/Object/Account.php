@@ -13,8 +13,6 @@ namespace TwitterAds\Object;
  *
  * @author logopogo
  */
-class Account extends AbstractCrudObject{
-   
-    
+class Account extends AbstractCrudObject {
     
 }

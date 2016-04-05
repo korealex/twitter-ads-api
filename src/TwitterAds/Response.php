@@ -18,6 +18,8 @@ class Response {
 
 
     public function __construct() {
+        
         $this->response = new \GuzzleHttp\Psr7\Response();
+        
     }
 }
