@@ -19,14 +19,19 @@ abstract class AbstractCrudObject {
 
     public function __construct($id = null, $parent_id = null, Api $api = null) {
 
-        $this->request = new \TwitterAds\Request();
+        $this->request = new \TwitterAdsApi\TwitterAds\Request();
+  
     }
 
     public function create($data) {
         $this->request->post();
     }
 
-    public function read() {
+    public function read($endpoint, $data, $id = null ) {
+        if(!empty($id)){
+          $endpoint= $endpoint ."/" .$id;  
+        }
+        $this->request->get($endpoint, $data);
         
     }
 

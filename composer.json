@@ -2,6 +2,7 @@
     "name": "korealex/twitter-ads-api",
     "description": "This package is to create ads with the twitter ads api v1.",
     "license": "GNU",
+    "minimum-stability":"dev",
     "keywords": ["twitter ads api, "],
     "authors": [
         {
@@ -15,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TwitterAds\\": "src/TwitterAds"
+            "TwitterAdsApi\\": "src"
         }
     }
 }

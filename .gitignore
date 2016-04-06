@@ -1,4 +1,4 @@
-nbproject/
 vendor/
 composer.json~
 composer.lock
+/nbproject/private/

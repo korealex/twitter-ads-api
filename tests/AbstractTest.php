@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -6,21 +6,20 @@
  * and open the template in the editor.
  */
 
-namespace TwitterAdsApi\TwitterAds;
 
 /**
- * Description of Response
+ * Description of AbstractTestCase
  *
  * @author logopogo
  */
-class Response {
-    public $response;
-
-
-    public function __construct() {
+class AbstractTest extends PHPUnit_Framework_TestCase {
+    
+    
+    public function testTestCase()
+    {
+        $x = new \TwitterAdsApi\TwitterAds\Response();
         
-        $this->response = new \GuzzleHttp\Psr7\Response();
+        $this->assertTrue(true);
         
-      
     }
 }
