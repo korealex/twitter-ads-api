@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace TwitterAds\Object;
+namespace TwitterAdsApi\TwitterAds\Object;
 
 /**
  * Description of Account
@@ -14,5 +14,8 @@ namespace TwitterAds\Object;
  * @author logopogo
  */
 class Account extends AbstractCrudObject {
+    
+    const URI = "https://ads-api.twitter.com/1/accounts/";
+    const ADS_ACCOUNT_ID = "11111111";
     
 }

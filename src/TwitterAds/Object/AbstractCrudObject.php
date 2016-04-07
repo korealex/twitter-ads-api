@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace TwitterAds\Object;
+namespace TwitterAdsApi\TwitterAds\Object;
 
 /**
  * Description of newPHPClass

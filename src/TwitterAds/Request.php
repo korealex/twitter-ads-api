@@ -15,26 +15,35 @@ namespace TwitterAdsApi\TwitterAds;
  */
 class Request {
 
-    const BASE_URL = "https://ads-api.twitter.com/";
+
 
     protected $client;
+
     protected $response;
 
     public function __construct($version = 1, $access_token, $secret) {
         $this->client = new \GuzzleHttp\Client();
+
         $this->setHeaders();
         $this->response = new Response();
     }
+    
+    
 
     public function setHeaders($access_token, $secret) {
         
     }
 
-    public function get($uri, $data) {
+    public function get($uri, $data, $header) {
 
         $query = ['query' => $data];
+        
 
-        $this->client->get(static::BASE_URL . $uri, $query);
+$this->client->request("GET", $uri,$header,  $query);
+        
+
+//        var_dump([$uri,$data]); die();
+        $this->client->get($uri, $query);
     }
 
     public function post($uri, $data) {

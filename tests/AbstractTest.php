@@ -18,6 +18,16 @@ class AbstractTest extends PHPUnit_Framework_TestCase {
     public function testTestCase()
     {
         $x = new \TwitterAdsApi\TwitterAds\Response();
+        print_r($x);
+        
+        $this->assertTrue(true);
+        
+    }
+    
+     public function testMyCase()
+    {
+        $x = new \TwitterAdsApi\TwitterAds\Response();
+        print_r($x);
         
         $this->assertTrue(true);
         
